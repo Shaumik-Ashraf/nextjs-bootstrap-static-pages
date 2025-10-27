@@ -1,8 +1,8 @@
 export default function Footer() {
 		return(
-			<footer>
+			<footer className="text-center text-muted">
 				<hr />
-				<center><p>&copy; 2025</p></center>
+				<p>&copy; 2025 | Version {process.env.VERSION}</p>
 			</footer>
 		)
 }

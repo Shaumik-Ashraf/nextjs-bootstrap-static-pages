@@ -3,18 +3,21 @@
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
  
 module.exports = (phase, { defaultConfig }) => {
-	const nextConfig = {
-		// config options for all phases here
-		output: 'export',
- 
+  const date = new Date()
+	const version = `${date.getFullYear()}.${date.getMonth()+1}.${date.getDate()}`
+  const nextConfig = {
+    // config options for all phases here
+    output: 'export',
+
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     trailingSlash: false,
  
     // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
     // skipTrailingSlashRedirect: true,
  
-    // Optional: Change the output directory `out` -> `dist`
-    // distDir: 'dist',	
+		env: {
+		  "VERSION": process.env.VERSION || `${version}-dev`
+		}
 	}
 
   if (phase === PHASE_DEVELOPMENT_SERVER) {
@@ -25,6 +28,9 @@ module.exports = (phase, { defaultConfig }) => {
   }
  
   return Object.assign(nextConfig, {
-			// config options for export here
+    // config options for export here
+    env: {
+      "VERSION": process.env.VERSION || version
+    }
   })
 }
