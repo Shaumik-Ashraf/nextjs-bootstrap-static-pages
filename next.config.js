@@ -1,4 +1,4 @@
-import { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
+import { PHASE_DEVELOPMENT_SERVER } from 'next/constants'
  
 module.exports = (phase, { defaultConfig }) => {
   const date = new Date()
