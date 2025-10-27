@@ -16,7 +16,7 @@ module.exports = (phase, { defaultConfig }) => {
     // skipTrailingSlashRedirect: true,
  
 		env: {
-		  "VERSION": process.env.VERSION || `${version}-dev`
+		  "VERSION": `${version}-dev`
 		}
 	}
 
@@ -30,7 +30,7 @@ module.exports = (phase, { defaultConfig }) => {
   return Object.assign(nextConfig, {
     // config options for export here
     env: {
-      "VERSION": process.env.VERSION || version
+      "VERSION": version
     }
   })
 }
