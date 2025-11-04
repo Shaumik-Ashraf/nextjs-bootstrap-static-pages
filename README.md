@@ -36,7 +36,7 @@ git push --force -u origin main
 
 2. Run `npm run dev` to start the development server
 
-3. Open <http://localhost:4000> to view the live app
+3. Open <http://localhost:3000> to view the live app
 
 ## ⚙️ Deployment
 
