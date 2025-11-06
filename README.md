@@ -75,3 +75,42 @@ SSL, rate limiting, or other critical features.
 - [React-Bootstrap](https://react-bootstrap.github.io/)
 - [Bootstrap 5](https://getbootstrap.com/)
 - [ReactJS 19](https://react.dev/)
+
+### Themes
+
+This template comes with bootstrap themes you can easily swap. The default theme is
+[Brite](https://bootswatch.com/brite/) and you can select your theme by loading
+its corresponding bootstrap CSS file in `styles/globals.css`. For example to use the
+solar theme:
+
+```
+// styles/globals.css
+@import "../themes/solar/bootstrap.min.css";
+```
+
+Themes are provided by [bootswatch](https://bootswatch.com/). Any theme should work.
+
+You can also add [Sass support](https://nextjs.org/docs/app/guides/sass) to NextJS
+and [customize bootstrap](https://getbootstrap.com/docs/5.3/customize/sass) directly.
+
+#### Brite
+
+![Brite theme has a neobrutalist form](themes/brite/screenshot.png)
+
+#### Cerulean
+
+![Cerulean theme is inspired by a calm blue sky](themes/cerulean/screenshot.png)
+
+#### Journal
+
+![Journal theme is crisp like a sheet of paper, with red primary color](themes/journal/screenshot.png)
+
+#### Quarts
+
+![Quartz theme feels like a glass isomorphic layer, using magenta and cyan](themes/journal/screenshot.png)
+
+#### Vanilla
+
+This is the default bootstrap theme.
+
+![Vanilla bootstrap colors are blue primary, gray secondary, green success, red danger, yellow warning, cyan info, light, and dark](themes/vanilla/screenshot.png)
