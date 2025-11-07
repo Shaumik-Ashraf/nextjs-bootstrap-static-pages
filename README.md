@@ -105,9 +105,9 @@ and [customize bootstrap](https://getbootstrap.com/docs/5.3/customize/sass) dire
 
 ![Journal theme is crisp like a sheet of paper, with red primary color](themes/journal/screenshot.png)
 
-#### Quarts
+#### Quartz
 
-![Quartz theme feels like a glass isomorphic layer, using magenta and cyan](themes/journal/screenshot.png)
+![Quartz theme feels like a glass isomorphic layer, using magenta and cyan](themes/quartz/screenshot.png)
 
 #### Vanilla
 
