@@ -66,7 +66,7 @@ The final output will be in the `out/` folder. The build process is powered by N
 hosting service or web server documentation for how do this.
 
 This app also comes with an `npm start` command which will run a web server for you,
-however it is recommended **not** to use this for production since it cannot handle
+however you **should not** use it for production since it cannot handle
 SSL, rate limiting, or other critical features.
 
 ## 📒 Documentation
@@ -79,11 +79,11 @@ SSL, rate limiting, or other critical features.
 ### Themes
 
 This template comes with bootstrap themes you can easily swap. The default theme is
-[Brite](https://bootswatch.com/brite/) and you can select your theme by loading
+[Brite](https://bootswatch.com/brite/) and you can change themes by loading
 its corresponding bootstrap CSS file in `styles/globals.css`. For example to use the
 solar theme:
 
-```
+```css
 // styles/globals.css
 @import "../themes/solar/bootstrap.min.css";
 ```
