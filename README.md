@@ -29,6 +29,7 @@ git push --force -u origin main
 ## 📚 Dependencies
 
 - [NodeJS](https://nodejs.org) v22.11.0 (may work with other versions)
+- npm v11.10.0 or greater
 
 ## 💻 Developer Start
 
