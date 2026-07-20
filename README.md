@@ -76,6 +76,7 @@ SSL, rate limiting, or other critical features.
 - [React-Bootstrap](https://react-bootstrap.github.io/)
 - [Bootstrap 5](https://getbootstrap.com/)
 - [ReactJS 19](https://react.dev/)
+- [Playwright](https://playwright.dev/)
 
 ### Themes
 
@@ -112,6 +113,20 @@ and [customize bootstrap](https://getbootstrap.com/docs/5.3/customize/sass) dire
 
 #### Vanilla
 
-This is the default bootstrap theme.
+This is the default Bootstrap theme.
 
 ![Vanilla bootstrap colors are blue primary, gray secondary, green success, red danger, yellow warning, cyan info, light, and dark](themes/vanilla/screenshot.png)
+
+### Testing
+
+This template comes with Playwright for end-to-end testing. Here is a quick command reference:
+
+|:          command             |:                     purpose                    |
+|-------------------------------|-------------------------------------------------|
+| `npm test`                    |  Run e2e tests                                  |
+| `npx playwright install-deps` |  Install browser binaries                       |
+| `npx playwright show-report`  |  Show last test run HTML report                 |
+| `npx playwright test --ui`    |  Launch interactive testing GUI                 |
+| `npx playwright codegen`      |  Record a browser session to generate test code |
+
+
