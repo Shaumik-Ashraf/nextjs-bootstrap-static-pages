@@ -114,6 +114,10 @@ and [customize bootstrap](https://getbootstrap.com/docs/5.3/customize/sass) dire
 
 ![Quartz theme feels like a glass isomorphic layer, using magenta and cyan](themes/quartz/screenshot.png)
 
+#### Solar
+
+![Solar theme is inspired by the famous solarized color scheme](themes/solar/screenshot.png)
+
 #### Vanilla
 
 This is the default Bootstrap theme.
