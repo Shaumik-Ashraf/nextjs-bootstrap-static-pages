@@ -31,6 +31,9 @@ git push --force -u origin main
 - [NodeJS](https://nodejs.org) v22.11.0 (may work with other versions)
 - npm v11.10.0 or greater
 
+**This app is configured to not install any packages released in the last 30 days for
+supply chain security. If you have different needs, edit `.npmrc`.**
+
 ## 💻 Developer Start
 
 1. Open your command line and run `npm install`
@@ -129,4 +132,22 @@ This template comes with Playwright for end-to-end testing. Here is a quick comm
 | `npx playwright test --ui`    |  Launch interactive testing GUI                 |
 | `npx playwright codegen`      |  Record a browser session to generate test code |
 
+### Agentic Development
+
+Agentic development (with `claude code`, `opencode`, etc.) is very new and constantly changing
+"best practices." Nonetheless here are a few recommendations:
+
+1. Upon first opening your agent, run the `/init` skill to create a common AGENTS.md (or CLAUDE.md, etc.)
+file to save time and tokens on code exploration. If you have opinions and experience, I recommend you
+manually review it and add your own tips or guardrails. `/init` must also be re-run regularly to stay updated
+on your codebase's state.
+
+2. For each task, enter `/plan` mode first and give it feedback meticulously. You should use the `/grill-me`
+[skill](https://www.skills.sh/docs) here. After approving and implementing the plan, review the `git diff`
+(or put up a draft pull request) and review the code again. With the surplus of AI generated code and slop,
+code review and quality assurance is more important than ever.
+
+3. *If you encounter bugs:* give the agent visual browser access with the `/playwright-cli` skill. Writing
+high-impact integration tests and doing [test driven development](https://en.wikipedia.org/wiki/Test-driven_development)
+(`/tdd`) improves the chance and quality of agent success.
 
